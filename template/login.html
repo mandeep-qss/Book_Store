@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% block 'main_content' %}
+
+    <div class="container my-4">
+    
+         <section id="register-form">
+    
+              <!--Title-->
+              <h2 class="section-heading text-center mb-4 h2">
+                Login form
+              </h2>
+            
+              <!-- Description -->
+              <p>
+              </p>
+            
+              <!--Grid row-->
+              <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-2 mb-4"></div>
+            
+                <!--Grid column-->
+                <div class="col-md-8 mb-4">
+            
+                  <!--Section: Live preview-->
+                  <section>
+            
+                    <!-- Default form login -->
+                    <form class="text-center border border-light p-5" method="POST">
+                      {% csrf_token %}
+            
+                      <p class="h4 mb-4">Login</p>
+                      <!-- E-mail -->
+                      <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" name="emaill" placeholder="E-mail">
+            
+                      <!-- Password -->
+                      <input type="password" id="defaultRegisterFormPassword" class="form-control" name="passwordd" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                            
+                      <!-- Sign up button -->
+                      <button class="btn btn-info my-4 btn-block waves-effect waves-light" name="logg" type="submit">Login</button>
+                                    
+                    </p>
+
+                    <p>
+                      <a href="" target="_blank">Forgot Password</a>        
+                  </p>
+                  
+                  </form>
+                    <!-- Default form register -->
+            
+                  </section>
+                  <!--Section: Live preview-->
+            
+                </div>
+                <!--Grid column-->
+                        
+              </div>
+              <!--Grid row-->
+            
+            </section>
+    
+      </div>
+
+      
+{% endblock %}

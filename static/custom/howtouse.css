@@ -1,0 +1,305 @@
+/*Downloaded from https://www.codeseek.co/rejebayknij/vertical-tabs-trick-pJPbRj */
+body{
+	font-family: 'Lucida Grande', helvetica, arial, sans-serif;
+	font-size: 12px;
+	background: #49a5bf;
+  background: linear-gradient(to bottom, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+}
+
+.clearboth{
+		clear:both;
+}
+
+#csstabs{ 
+  position:relative; 
+  width:970px;
+  height:435px; 
+}
+
+#csstabs h3{ 
+	background: #ff920a;
+  height:20px; 
+  width: 250px; 
+  text-align:left;
+  display:block; 		
+  font-size:16px; 
+  cursor: pointer;
+  margin:0;
+  padding: 10px 15px 10px 20px;
+  box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
+  border-left: 5px solid #e9d4b3;
+  border-bottom: 5px solid #e9d4b3;
+  border-radius: 5px;
+ 
+  -webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+}
+
+.tabcontent{
+	top:0;
+  left:0px;
+	padding:10px 0 0 10px;
+	width:650px;
+  height:435px;
+	background:#333;
+  color:white;
+  font-size: 50px;
+  border-radius: 5px;
+	position:absolute;
+	display:block;
+	margin:0;
+  opacity: 0;
+}
+
+#tab1 .tabcontent{
+		z-index:9;
+		opacity:1;
+}
+#tab2 .tabcontent,
+#tab3 .tabcontent,
+#tab4 .tabcontent,
+#tab5 .tabcontent,
+#tab6 .tabcontent,
+#tab7 .tabcontent,
+#tab8 .tabcontent,
+#tab9 .tabcontent,{
+		opacity:0;
+}
+#tab2 .tabcontent{
+		z-index:8; 
+}
+#tab3 .tabcontent{
+		z-index:7; 
+}
+#tab4 .tabcontent{
+		z-index:6; 
+}
+#tab5 .tabcontent{
+		z-index:5; 
+}
+#tab6 .tabcontent{
+		z-index:4; 
+}
+#tab7 .tabcontent{
+		z-index:3; 
+}
+#tab8 .tabcontent{
+		z-index:2; 
+}
+#tab9 .tabcontent{
+		z-index:1; 
+}
+
+#tab1 h3,
+#tab2 h3,
+#tab3 h3,
+#tab4 h3,
+#tab5 h3,
+#tab6 h3,
+#tab7 h3,
+#tab8 h3,
+#tab9 h3 {
+    right:0px;
+		width:250px;
+		position:absolute;
+		cursor:hand;
+		background:linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+}
+#tab1 h3{
+		z-index:9;
+		top:0;
+}
+#tab2 h3{
+		top:50px;
+}
+#tab3 h3{
+		top:100px;
+}
+#tab4 h3{
+		top:150px;
+}
+#tab5 h3{
+		top:200px;
+}
+#tab6 h3{
+		top:250px;
+}
+#tab7 h3{
+		top:300px;
+}
+#tab7 h3{
+		top:300px;
+}
+#tab8 h3{
+		top:350px;
+}
+#tab9 h3{
+		top:400px;
+}
+
+#csstabs:hover h3, 
+#tabs:focus h3, 
+#tabs:active h3{
+		background:#ff920a;
+		z-index:0;
+}
+
+#csstabs:hover .tabcontent, 
+#tabs:focus .tabcontent, 
+#tabs:active .tabcontent{
+		z-index:0;
+		opacity:1;
+		-webkit-transition : opacity 0.3s ease-in;
+}
+
+#tab1:hover h3,#tab1:focus h3,#tab1:active h3,
+#tab2:hover h3,#tab2:focus h3,#tab2:active h3,
+#tab3:hover h3,#tab3:focus h3,#tab3:active h3,
+#tab4:hover h3,#tab4:focus h3,#tab4:active h3,
+#tab5:hover h3,#tab5:focus h3,#tab5:active h3,
+#tab6:hover h3,#tab6:focus h3,#tab6:active h3,
+#tab7:hover h3,#tab7:focus h3,#tab7:active h3,
+#tab8:hover h3,#tab8:focus h3,#tab8:active h3,
+#tab9:hover h3,#tab9:focus h3,#tab9:active h3
+{
+  background: #333;
+	border-left: 5px solid #000;
+  border-right: 12px solid #000;
+  font-weight: bold;
+	color: #fff;
+  padding-left: 18px;
+}
+#tab1:hover h3,#tab1:focus h3,#tab1:active h3 {
+  z-index:9;
+}
+#tab2:hover h3,#tab2:focus h3,#tab2:active h3 {
+  z-index:8;
+}
+#tab3:hover h3,#tab3:focus h3,#tab3:active h3 {
+  z-index:7;
+}
+#tab4:hover h3,#tab4:focus h3,#tab4:active h3 {
+  z-index:6;
+}
+#tab5:hover h3,#tab5:focus h3,#tab5:active h3 {
+  z-index:5;
+}
+#tab6:hover h3,#tab6:focus h3,#tab6:active h3 {
+  z-index:4;
+}
+#tab7:hover h3,#tab7:focus h3,#tab7:active h3 {
+  z-index:3;
+}
+#tab8:hover h3,#tab8:focus h3,#tab8:active h3 {
+  z-index:2;
+}
+#tab9:hover h3,#tab9:focus h3,#tab9:active h3 {
+  z-index:1;
+}
+
+#tab1:hover code,#tab1:focus code,#tab1:active code,
+#tab2:hover code,#tab2:focus code,#tab2:active code,
+#tab3:hover code,#tab3:focus code,#tab3:active code,
+#tab4:hover code,#tab4:focus code,#tab4:active code,
+#tab5:hover code,#tab5:focus code,#tab5:active code,
+#tab6:hover code,#tab6:focus code,#tab6:active code,
+#tab7:hover code,#tab7:focus code,#tab7:active code,
+#tab8:hover code,#tab8:focus code,#tab8:active code,
+#tab9:hover code,#tab9:focus code,#tab9:active code{
+  color: #ff920a;
+  font-weight: bold;
+  margin-left: 192px;
+}
+
+#tab1:hover .tabcontent,
+#tab1:focus .tabcontent,
+#tab1:active .tabcontent,
+#tab2:hover .tabcontent,
+#tab2:focus .tabcontent,
+#tab2:active .tabcontent,
+#tab3:hover .tabcontent,
+#tab3:focus .tabcontent,
+#tab3:active .tabcontent,
+#tab4:hover .tabcontent,
+#tab4:focus .tabcontent,
+#tab4:active .tabcontent,
+#tab5:hover .tabcontent,
+#tab5:focus .tabcontent,
+#tab5:active .tabcontent,
+#tab6:hover .tabcontent,
+#tab6:focus .tabcontent,
+#tab6:active .tabcontent,
+#tab7:hover .tabcontent,
+#tab7:focus .tabcontent,
+#tab7:active .tabcontent,
+#tab8:hover .tabcontent,
+#tab8:focus .tabcontent,
+#tab8:active .tabcontent,
+#tab9:hover .tabcontent,
+#tab9:focus .tabcontent,
+#tab9:active .tabcontent,{	
+  background:#333; 
+  opacity:1; 
+  -webkit-transition : opacity 0.3s ease-in;
+}
+
+#tab1:hover .tabcontent,
+#tab1:focus .tabcontent,
+#tab1:active .tabcontent{	
+  z-index:9;	
+}
+#tab2:hover .tabcontent,
+#tab2:focus .tabcontent,
+#tab2:active .tabcontent{	
+  z-index:8;	
+}
+#tab3:hover .tabcontent,
+#tab3:focus .tabcontent,
+#tab3:active .tabcontent{	
+  z-index:7;	
+}
+#tab4:hover .tabcontent,
+#tab4:focus .tabcontent,
+#tab4:active .tabcontent{	
+  z-index:6;	
+}
+#tab5:hover .tabcontent,
+#tab5:focus .tabcontent,
+#tab5:active .tabcontent{	
+  z-index:5;	
+}
+#tab6:hover .tabcontent,
+#tab6:focus .tabcontent,
+#tab6:active .tabcontent{	
+  z-index:4;	
+}
+#tab7:hover .tabcontent,
+#tab7:focus .tabcontent,
+#tab7:active .tabcontent{	
+  z-index:3;	
+}
+#tab8:hover .tabcontent,
+#tab8:focus .tabcontent,
+#tab8:active .tabcontent{	
+  z-index:2;	
+}
+#tab9:hover .tabcontent,
+#tab9:focus .tabcontent,
+#tab9:active .tabcontent{	
+  z-index:1;	
+}
+
+code {
+  font-family: 'Lucida Grande', helvetica, arial, sans-serif;
+	font-size: 20px;
+  /* margin-left: 190px; */
+}
+
+.tabbox {
+  width:1050px;
+  height:500px; 
+  border: 2px solid #333;
+  border-radius:5px;
+  margin: 0 auto;
+}
